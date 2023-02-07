@@ -1,11 +1,12 @@
 import { useRoute } from "@react-navigation/native";
 
 import { Wrapper } from "../../components/Wrapper";
-import { Input } from "../../components/Input";
+// import { Input } from "../../components/Input";
 import { ProductsList } from "../../components/ProductsList";
 import { GoBackButton } from "../../components/GoBackButton";
 import { Row, Title } from "./styles";
 import { ICategory } from "../../utils/interfaces.backend";
+import { SearchInput } from "../../components/SearchInput";
 //import { ICategory } from "../../components/HorizontalCategories";
 
 // interface RouteParamsData {
@@ -32,7 +33,8 @@ export function CategoryProducts() {
         <Title>{category.descricao}</Title>
       </Row>
 
-      <Input icon="MagnifyingGlass" placeholder="Pesquisar produto" />
+      {/* <Input icon="MagnifyingGlass" placeholder="Pesquisar produto" /> */}
+      <SearchInput />
 
       <ProductsList categoryId={category.id} />
     </Wrapper>

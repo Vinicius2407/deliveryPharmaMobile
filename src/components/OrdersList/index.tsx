@@ -15,6 +15,7 @@ import { useAuthentication } from "../../contexts/AuthenticationContext";
 
 interface RenderItemProps {
     item: OrderProps;
+    index: number;
 }
 
 export function OrdersList() {
@@ -61,9 +62,9 @@ export function OrdersList() {
             // initialNumToRender={3}
             style={{ paddingTop: 6 }}
             contentContainerStyle={{ paddingBottom: 32 }}
-            renderItem={({ item }: RenderItemProps) => (
+            renderItem={({ item, index }: RenderItemProps) => (
                 <Item
-                    style={{ borderRadius: 6, elevation: 2 }}
+                    style={{ borderRadius: 6, elevation: 2, marginTop: index ? 12 : 0 }}
                     onPress={() => handleOrderDetails(item)}
                     activeOpacity={0.6}
                 >

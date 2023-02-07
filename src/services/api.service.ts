@@ -3,7 +3,7 @@ import { Buffer } from "buffer";
 
 export let api = axios.create({
   // baseURL: `http://54.94.145.24:8080/`,
-  baseURL: `http://192.168.0.106:8080/`,
+  baseURL: `http://18.231.178.72:8080/`,
   timeout: 5000,
   timeoutErrorMessage: "Excedido o tempo",
 });

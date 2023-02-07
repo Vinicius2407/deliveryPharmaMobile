@@ -53,7 +53,7 @@ export function ClientsOrders() {
             <List 
                 data={allOrders}
                 emptyListMessage='Não há solicitações no momento.'
-                style={{ marginBottom: 16 }}
+                style={{ marginBottom: -16}}
                 contentContainerStyle={{ paddingBottom: 16 }}
                 renderItem={({ index, item } : RenderItemProps) => (
                     <BoxContainer>

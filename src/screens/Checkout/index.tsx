@@ -200,7 +200,11 @@ export function Checkout() {
                 </ModalPopup>
             )}
             
-            <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator={false} contentContainerStyle={{ marginVertical: 16 }}>
+            <ScrollView
+                style={{ flex: 1 }}
+                showsVerticalScrollIndicator={false}
+                contentContainerStyle={{ paddingBottom: 16 }}
+            >
                 <Row>
                     <Title style={{ fontSize: 20 }}>
                         Itens do carrinho
@@ -214,7 +218,7 @@ export function Checkout() {
                                 <Row style={{ justifyContent: 'space-between' }}>
                                     <Row style={{ justifyContent: 'space-between' }}>
                                         <Highlight style={{ fontSize: 16, width: '80%' }}>
-                                            { nome } 
+                                            { nome }
                                         </Highlight>
                                     </Row>
                                     <ImageContainer>

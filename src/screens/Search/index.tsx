@@ -65,11 +65,12 @@ export function Search() {
             placeholder="Pesquisar produto"
             value={searchValue}
             onChangeText={(text) => setSearchValue(text)}
+            onSubmitEditing={handleSearchProduct}
           />
         </InputContainer>
-        <SearchButton onPress={handleSearchProduct}>
+        {/* <SearchButton onPress={handleSearchProduct}>
           <Check size={26} color={styles.colors.body} weight='bold' />
-        </SearchButton>
+        </SearchButton> */}
       </Row>
       <List
         data={searchedProducts}

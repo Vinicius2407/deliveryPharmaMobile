@@ -52,7 +52,7 @@ export function ProductsList({ categoryId }: ProductsListProps) {
     <List
       data={products}
       numColumns={2}
-      style={{ paddingTop: 10 }}
+      style={{ paddingTop: 10, marginBottom: -16}}
       contentContainerStyle={{ paddingBottom: 32 }}
       renderItem={({ item, index }: RenderItemBackendProps) => (
         <Item
